@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); 
+
+body{
+    min-height: 100vh;
+    padding: 0 20px;
+    font-family: "Oswald", sans-serif;
+    background-color: rgb(8, 109, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    position: relative;
+    max-width:700px;
+    width: 100%;
+    background-color: #fff;
+    paddingb: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px;
+}
+.container header{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+}
+.form .input-box{
+
+    width: 100%;
+    margin: 20px;
+
+}
+ .input-box label{
+    color: #333;
+
+}
+
+.form :where( .input-box input, .select-box){
+    position: relative;
+    height: 55px;
+    width: 90%;
+    outline: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 0 15px;
+
+}
+
+.colum{
+    display: flex;
+    column-gap:15px ;
+}
+
+.form .gender-box{
+    margin-top:20px ;
+    /* display: flex;
+    row-gap: 15px; */
+
+}
+
+.gender-box h3{
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+
+}
+ .form :where( .gender-option, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+ }
+ .from .gender{
+column-gap: 15px;
+cursor: pointer;
+ }
+
+ .form :where(.gender input , .gender label){
+    cursor:pointer;
+
+ }
+ .address :where(input , .select-box){
+margin-top:20px ;
+ }
+ .select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+ }
+ form button{
+    height: 55px;
+    width: 90%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    background-color: rgb(2, 69, 114);
+    border-radius: 6px;
+    font-weight: 400;
+ }
+  
+ .form button:hover{
+    background-color: #333;
+
+ }
+ @media screen and( max-width:700px){
+    .form .colum{
+        flex-wrap:wrap ;
+    }
+ }
+
+ @media screen and (max-width:400px){
+     .form:where( .gender-option, .gender){
+        row-gap: 15px;
+        flex-wrap: wrap;
+    }
+ }
+    
+ 
